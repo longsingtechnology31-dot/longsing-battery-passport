@@ -3,50 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EU Battery Passport Lead Acid</title>
+<title>EU Battery Passport | Lead-Acid Battery</title>
 <style>
-body{font-family:Arial,sans-serif;max-width:900px;margin:30px auto;padding:20px;line-height:1.7;color:#222;}
-h2{border-bottom:2px solid #224477;padding-bottom:8px;color:#224477;margin-top:40px;}
-table{width:100%;border-collapse:collapse;margin:15px 0;}
-td{border:1px solid #ccc;padding:12px;vertical-align:top;}
-.left{width:35%;background:#f7f9fc;font-weight:bold;}
-a{color:#0055bb;}
+body{font-family:Arial,sans-serif;max-width:920px;margin:30px auto;padding:20px;line-height:1.7;color:#1a1a1a;background:#fff;}
+h1{color:#1f3b64;font-size:24px;text-align:center;}
+h2{border-bottom:2px solid #224477;padding-bottom:8px;color:#224477;margin-top:35px;font-size:19px;}
+table{width:100%;border-collapse:collapse;margin:18px 0;}
+td{border:1px solid #cccccc;padding:12px;vertical-align:top;}
+.left-col{width:34%;background:#f6f9fd;font-weight:bold;}
+a{color:#0052b8;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.info-bar{background:#eef4fc;padding:14px;border-radius:6px;font-size:17px;}
+.warning{color:#992222;}
 </style>
 </head>
 <body>
-<h1>EU BATTERY PASSPORT (REGULATION (EU) 2023/1542)</h1>
-<p><strong>Unique Traceability Number (SN):</strong> {{SN}}</p >
+<h1>EU BATTERY PASSPORT<br>REGULATION (EU) 2023/1542</h1>
+
+<div class="info-bar">
+<strong>Unique Traceability Number (SN):</strong> <span id="sn-display">Loading...</span>
+</div>
 
 <h2>1. BASIC INFORMATION (ANNEX VI PART C)</h2>
 <table>
-<tr><td class="left">Manufacturer Information (Art.38 §7)</td><td>{LONG SING TECHNOLOGY GROUP (HONG KONG) LIMITED}, {LONGSING ENERGY}, {Room 809, 8 floor, Data Technology Hub, 5 Chun Cheong Street, Tseung Kwan O, Hong Kong}, Contact Person: {Rachel Huang}, Website: {www.longsingtechnology.com}, Email: {rachel.huang@longsingtechnology.com}</td></tr>
-<tr><td class="left">Battery Category & Traceability</td><td>Battery Type: {BT-12M1.2AT}, Batch/SN: {{SN}}, Battery Category: Industrial Lead-Acid Rechargeable Battery</td></tr>
-<tr><td class="left">Place of Manufacture</td><td>City of Wuhan, Guangdong Province, P.R.China</td></tr>
-<tr><td class="left">Date of Manufacture</td><td>{{YearMonth}}</td></tr>
-<tr><td class="left">Net Weight</td><td>{0.49} kg</td></tr>
-<tr><td class="left">Nominal Voltage & Capacity</td><td>{12V&1.2Ah}</td></tr>
-<tr><td class="left">Chemistry System</td><td>Lead-Acid (Flooded / AGM / Gel Valve-Regulated Lead Acid Battery)</td></tr>
-<tr><td class="left">Hazardous Substance Statement</td><td>Lead content strictly within EU RoHS & Battery Directive limit, No mercury, no cadmium.</td></tr>
-<tr><td class="left">Suitable Extinguishing Agent</td><td>Dry powder, CO2, sand, avoid direct water flushing.</td></tr>
-<tr><td class="left">Critical Raw Materials (>0.1% w/w)</td><td>Primary lead, sulphuric acid, polypropylene, carbon black, calcium alloy.</td></tr>
-<tr><td class="left">Carbon Footprint Declaration (Art.71)</td><td>Product carbon footprint calculated in accordance with ISO 14067, life cycle emission statement attached.</td></tr>
-<tr><td class="left">Recycled Content Statement (Art.68)</td><td>Recycled lead material proportion: {72}% of total lead mass.</td></tr>
+<tr>
+<td class="left-col">Manufacturer Information</td>
+<td>
+{{CompanyName}}<br>
+Trade Mark: {{TradeMark}}<br>
+Address: {{Address}}<br>
+Contact: {{Contact}}<br>
+Website: {{Web}} | Email: {{Email}}
+</td>
+</tr>
+<tr>
+<td class="left-col">Battery Identification</td>
+<td>Model: {{Model}}<br>Category: Industrial Valve-Regulated Lead-Acid Battery</td>
+</tr>
+<tr>
+<td class="left-col">Production Information</td>
+<td>Manufactured in Zhuhai, Guangdong, China<br>Production Date: {{YearMonth}}</td>
+</tr>
+<tr>
+<td class="left-col">Physical & Electrical Spec</td>
+<td>Net Weight: {{Weight}} kg<br>Rated Spec: {{Spec}}</td>
+</tr>
+<tr>
+<td class="left-col">Chemistry System</td>
+<td>Lead-Acid (VRLA AGM / Gel / Flooded)</td>
+</tr>
+<tr>
+<td class="left-col">Hazardous Substance Statement</td>
+<td>Compliant with RoHS & EU Battery Directive. Free of Mercury and Cadmium.</td>
+</tr>
+<tr>
+<td class="left-col">Fire Fighting Instruction</td>
+<td>Dry powder, CO₂ or sand. Avoid direct continuous water jet.</td>
+</tr>
+<tr>
+<td class="left-col">Key Raw Materials</td>
+<td>Primary & Recycled Lead, Sulphuric Acid, Polypropylene, Carbon Black, Calcium Alloy</td>
+</tr>
+<tr>
+<td class="left-col">Carbon Footprint</td>
+<td>Product carbon footprint assessed per ISO 14067</td>
+</tr>
+<tr>
+<td class="left-col">Recycled Content</td>
+<td>Recycled lead proportion: {{RecycleRate}} % of total lead mass</td>
+</tr>
 </table>
 
 <h2>2. EU DECLARATION OF CONFORMITY</h2>
-<p><a href="doc.pdf " target="_blank">Download EU DoC PDF</a ></p >
+<p><a href=" " target="_blank">Download EU Declaration of Conformity (DoC)</a ></p >
 
-<h2>3. TECHNICAL AND SAFETY INFORMATION MSDS</h2>
-<p><a href="msds.pdf" target="_blank">Download Material Safety Data Sheet</a ></p >
+<h2>3. SAFETY DOCUMENTATION</h2>
+<p><a href="msds.pdf" target="_blank">Download MSDS Material Safety Data Sheet</a ></p >
 
-<h2>4. INFORMATION FOR BATTERY DISPOSAL(Art.74)</h2>
-<p>Disposal symbol on labelling, waste battery take-back scheme complied with EU EPR regulation.</p >
-<p><a href="waste.pdf" target="_blank">Download Information For Battery Disposal </a ></p >
+<h2>4. EPR & Waste Battery Management (Art.74)</h2>
+<p>The producer fulfills Extended Producer Responsibility obligations under EU Battery Regulation. Waste lead-acid battery take-back system available within EU territory.</p >
+<p><a href="epr.pdf" target="_blank">Download EPR Waste Management Statement</a ></p >
 
 <h2>5. SUPPLY CHAIN DUE DILIGENCE (Art.52)</h2>
-<p>Raw material lead supply chain traceability, responsible sourcing statement.</p >
-<p><a href="due.pdf" target="_blank">Download Supply Chain Due Diligence</a ></p >
+<p>Lead raw materials sourced from legal and certified smelters. No conflict minerals applied in production.</p >
+<p><a href="due.pdf" target="_blank">Download Responsible Sourcing Statement</a ></p >
 
+<p class="warning"><i>Note: This document is digitally bound to the unique SN code. Each physical battery corresponds to only one traceability number.</i></p >
+
+<script>
+// 读取URL里面的SN参数
+const urlParams = new URLSearchParams(window.location.search);
+const snCode = urlParams.get('sn');
+
+// SN展示逻辑
+if(snCode && snCode.trim() !== ""){
+    document.getElementById("sn-display").innerText = snCode.trim();
+}else{
+    document.getElementById("sn-display").innerText = "No valid serial number detected. Please access via QR code.";
+}
+</script>
 </body>
 </html>
-
