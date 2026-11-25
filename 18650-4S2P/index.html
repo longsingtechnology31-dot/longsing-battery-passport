@@ -1,0 +1,111 @@
+index-LS-INR18650-4S2P.html — 二次锂电池护照首页
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EU Battery Passport | Rechargeable Lithium-ion Battery (NCM)</title>
+
+<style>
+
+body{font-family:Arial,sans-serif;max-width:900px;margin:30px auto;padding:20px;line-height:1.7;color:#222;}
+
+h1{color:#224477;font-size:23px;text-align:center;}
+
+h2{border-bottom:2px solid #224477;padding-bottom:8px;color:#224477;margin-top:40px;font-size:19px;}
+
+table{width:100%;border-collapse:collapse;margin:15px 0;}
+
+td{border:1px solid #ccc;padding:12px;vertical-align:top;}
+
+.left{width:35%;background:#f7f9fc;font-weight:bold;}
+
+a{color:#0055bb;}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>EU BATTERY PASSPORT (REGULATION (EU) 2023/1542)</h1>
+
+<strong>Unique Traceability Number (SN):</strong> <span id="sn-display">Loading...</span>
+
+
+<h2>1. BASIC INFORMATION (ANNEX VI PART C)</h2>
+
+<table>
+
+<tr><td class="left">Manufacturer Information (Art.38 §7)</td><td>LONG SING TECHNOLOGY GROUP (HONG KONG) LIMITED, LONGSING ENERGY, Room 809, 8 floor, Data Technology Hub, 5 Chun Cheong Street, Tseung Kwan O, Hong Kong. Contact Person: Rachel Huang. Website: www.longsingtechnology.com, Email: rachel.huang@longsingtechnology.com</td></tr>
+
+<tr><td class="left">EU Importer Information</td><td>Mc'Tronic S.r.l., C.so Milano 180, 28883 Gravellona Toce (VB), Italy. Website: www.mctronic.net, Email: info@mctronic.it</td></tr>
+
+<tr><td class="left">Battery Category & Traceability</td><td>Battery Type: LS_INR18650-4S2P14.8V/6.4Ah, Batch/SN: {2026/12}, Battery Category: Rechargeable Lithium-ion Battery (secondary), NCM chemistry, 4S2P configuration</td></tr>
+
+<tr><td class="left">Place of Manufacture</td><td>City of Zhuhai, P.R.China</td></tr>
+
+<tr><td class="left">Date of Manufacture</td><td>{2026/12} </td></tr>
+
+<tr><td class="left">Net Weight</td><td>0.39 kg </td></tr>
+
+<tr><td class="left">Nominal Voltage & Capacity</td><td>14.8 V / 6.4 Ah (94.72 Wh)</td></tr>
+
+<tr><td class="left">Chemistry System</td><td>Rechargeable Lithium-ion, NCM (Lithium Nickel Cobalt Manganese Oxide) </td></tr>
+
+<tr><td class="left">Hazardous Substance Statement</td><td>No mercury, no cadmium, no lead. Contains organic electrolyte and NCM cathode material; refer to the MSDS for full hazard identification.</td></tr>
+
+<tr><td class="left">Suitable Extinguishing Agent</td><td>Dry powder, CO2 or sand; water spray may be used to cool the battery casing. Do not expose cells or batteries to heat, fire or direct sunlight.</td></tr>
+
+<tr><td class="left">Critical Raw Materials </td><td>Lithium, nickel, cobalt, manganese, graphite. Lithium, nickel and cobalt are listed as EU Critical Raw Materials.</td></tr>
+
+<tr><td class="left">Carbon Footprint Declaration (Art.7)</td><td>Not applicable. With a capacity of 0.09472 kWh (94.72 Wh), this battery is below the 2 kWh threshold and is neither an electric vehicle battery nor an LMT battery; the carbon footprint declaration obligation under Article 7 of Regulation (EU) 2023/1542 therefore does not apply.</td></tr>
+
+<tr><td class="left">Recycled Content Statement (Art.8)</td><td>Not applicable. The recycled-content documentation obligation under Article 8 applies to EV, SLI and rechargeable industrial batteries above 2 kWh from 18 August 2028; this battery (0.09472 kWh) is outside that scope.</td></tr>
+
+</table>
+
+<h2>2. EU DECLARATION OF CONFORMITY</h2>
+
+<p><a href="EU DECLARATION OF CONFORMITY-LS_INR18650-4S2P.pdf" target="_blank">Download EU DoC PDF</a></p>
+
+<h2>3. TECHNICAL AND SAFETY INFORMATION MSDS</h2>
+
+<p><a href="MSDS-LS_INR18650-4S2P.pdf" target="_blank">Download Material Safety Data Sheet</a></p>
+
+<h2>4. INFORMATION FOR BATTERY DISPOSAL (Art.74)</h2>
+
+<p>Disposal symbol on labelling, waste battery take-back scheme complied with EU EPR regulation. Do not dispose of in household waste.</p>
+
+<p><a href="INFORMATION FOR BATTERY DISPOSAL-LS_INR18650-4S2P.pdf" target="_blank">Download Information For Battery Disposal</a></p>
+
+<h2>5. SUPPLY CHAIN DUE DILIGENCE (Art.52)</h2>
+
+<p>Lithium, nickel and cobalt supply chain traceability, responsible sourcing statement.</p>
+
+<p><a href="SUPPLY CHAIN DUE DILIGENCE-LS_INR18650-4S2P.pdf" target="_blank">Download Supply Chain Due Diligence</a></p>
+
+<script>
+// 读取URL里面的SN参数
+const urlParams = new URLSearchParams(window.location.search);
+const snCode = urlParams.get('sn');
+
+// SN展示逻辑
+if(snCode && snCode.trim() !== ""){
+    document.getElementById("sn-display").innerText = snCode.trim();
+}else{
+    document.getElementById("sn-display").innerText = "No valid serial number detected. Please access via QR code.";
+}
+</script>
+
+
+
+</body>
+
+
+</html>
+
